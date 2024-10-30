@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>RPG - Jeu Du Dragon 🐉</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <div id="game">
+      <div class="image">
+        <img
+          src="./img/Place.jpeg"
+          alt="Lieu actuel"
+          id="location-image"
+          class="location-image"
+        />
+      </div>
+      <div id="stats">
+        <span class="stat"
+          >FORCE 🦾: <strong><span id="xpText">0</span></strong></span
+        >
+        <span class="stat"
+          >VIE ❤️: <strong><span id="healthText">100</span></strong></span
+        >
+        <span class="stat"
+          >OR 🔱: <strong><span id="goldText">50</span></strong></span
+        >
+      </div>
+      <div id="controls">
+        <button id="button1">Allez au magasin 🏬</button>
+        <button id="button2">Allez au Donjon 🏛️</button>
+        <button id="button3">Combattre le DRAGON 🐉</button>
+      </div>
+      <div id="monsterStats">
+        <span class="stat"
+          >Monstre 🧌 : <strong><span id="monsterName"></span></strong
+        ></span>
+        <span class="stat"
+          >Point de vie ❤️: <strong><span id="monsterHealth"></span></strong
+        ></span>
+      </div>
+      <div id="text">
+        Bienvenue au royaume du <strong>Dragon</strong>.<br />
+        Vous devez <strong>vaincre</strong> le dragon qui empêche les gens de
+        quitter la ville.<br />
+        Vous êtes devant le château. Où veux-tu aller? <br />
+        Utilisez les <strong>boutons</strong> ci-dessus 👆.
+      </div>
+    </div>
+    <footer>© Développé par BERTHE Théophile - 2024</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
